@@ -1,6 +1,11 @@
 #pragma once
-#include <string>
 
+#include <string>
+#include <windows.h>
+#include <fstream>
+#include <iostream>
+#include <cstdlib>
+#include <cassert>
 using namespace std;
 
 namespace LoopEngine
@@ -30,7 +35,7 @@ namespace LoopEngine
         //Ne fais rien si la valeur de _IsConsoleTraceActive est identique.
         void ActivateFileTrace(bool InIsActive);
         void ActivateFileTrace(bool InIsActive, const string& InFileName);
-        //Log une eERROR si la trace de fichier en actuellement active.
+        //Log une eERROR si la trace de fichier est actuellement active.
         //Log une eERROR si le nom de fichier est vide.
         void SetFileTraceName(const string InFileTraceName);
 
@@ -49,5 +54,6 @@ namespace LoopEngine
         //Méthodes suggérées mais pas obligatoire.
         bool TryOpenFile();
         bool TryCloseFile();
+        void CustomAbort(const string fullMsg) const;
     };
 };
