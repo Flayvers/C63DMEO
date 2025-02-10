@@ -1,0 +1,20 @@
+project template : 
+
+projet -> exporter le modele
+
+modele de projet -> projetDessin
+
+nom du modele : projetraylib
+
+description : projet de base correctement configurer avec raylib
+
+Emplacement de sortie : 
+	cocher afficher une fenetre d'explorateur pour le dossier des fichiers de sortie
+	cocher importer automatiquement le modele dans VS
+	
+	TERMINER
+	
+	
+Utiliser le modele : 
+
+	Creation de projet -> raylib au lieu de application console
