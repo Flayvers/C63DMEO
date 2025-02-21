@@ -2,6 +2,7 @@
 //hpp pour les classes très simples, sinon le temps de compilation peu êtr très élevé.
 
 #include "raylib.h"
+#include <string>
 
 class SimpleSquare
 {
